@@ -12,6 +12,10 @@
 		F44E60B2231C9EF60045EF94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44E60B0231C9EF60045EF94 /* Main.storyboard */; };
 		F44E60B4231C9F080045EF94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44E60B3231C9F080045EF94 /* Assets.xcassets */; };
 		F44E60B7231C9F080045EF94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44E60B5231C9F080045EF94 /* LaunchScreen.storyboard */; };
+		F44E60C4231CB1810045EF94 /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44E60C3231CB1800045EF94 /* NetworkProcessor.swift */; };
+		F44E60C7231CB9940045EF94 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44E60C6231CB9940045EF94 /* CoreLocation.framework */; };
+		F44E60C9231CC8920045EF94 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44E60C8231CC8920045EF94 /* ForecastService.swift */; };
+		F44E60CB231CCAC30045EF94 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44E60CA231CCAC30045EF94 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F44E60B3231C9F080045EF94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44E60B6231C9F080045EF94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F44E60B8231C9F080045EF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44E60C3231CB1800045EF94 /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
+		F44E60C6231CB9940045EF94 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F44E60C8231CC8920045EF94 /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		F44E60CA231CCAC30045EF94 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44E60C7231CB9940045EF94 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				F44E60AB231C9EF60045EF94 /* WEATHER-V1.1 */,
 				F44E60AA231C9EF60045EF94 /* Products */,
+				F44E60C5231CB9920045EF94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				F44E60AC231C9EF60045EF94 /* AppDelegate.swift */,
+				F44E60C2231CB1230045EF94 /* Network */,
 				F44E60C1231CA5C10045EF94 /* Model */,
 				F44E60C0231CA5B80045EF94 /* View */,
 				F44E60BF231CA5A20045EF94 /* Controller */,
@@ -92,8 +103,26 @@
 		F44E60C1231CA5C10045EF94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F44E60C8231CC8920045EF94 /* ForecastService.swift */,
+				F44E60CA231CCAC30045EF94 /* CurrentWeather.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F44E60C2231CB1230045EF94 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F44E60C3231CB1800045EF94 /* NetworkProcessor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F44E60C5231CB9920045EF94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F44E60C6231CB9940045EF94 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44E60C9231CC8920045EF94 /* ForecastService.swift in Sources */,
+				F44E60CB231CCAC30045EF94 /* CurrentWeather.swift in Sources */,
+				F44E60C4231CB1810045EF94 /* NetworkProcessor.swift in Sources */,
 				F44E60AF231C9EF60045EF94 /* ViewController.swift in Sources */,
 				F44E60AD231C9EF60045EF94 /* AppDelegate.swift in Sources */,
 			);
